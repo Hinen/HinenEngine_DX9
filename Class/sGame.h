@@ -1,0 +1,24 @@
+//////////////////////////////////////////////////////////////
+//////////////////////  게임씬 클래스  ///////////////////////
+//////////////////////////////////////////////////////////////
+
+#pragma once
+#include "scene.h"
+#include "oChar.h"
+
+class sGame : public scene	// 씬을 상속받는다.
+{
+public:
+	sGame();
+	~sGame();
+
+public:
+	void init();
+	void update();
+	void render();
+
+private:
+	// 캐릭터 클래스를 선언
+	oChar *_char;
+};
+
